@@ -6,7 +6,7 @@ public class Zoologico {
 	
 	private String nombre;
 	private String ubicacion;
-	private static ArrayList<Zona>zonas= new ArrayList<>();
+	private ArrayList<Zona>zonas= new ArrayList<>();
 			
 
 	public Zoologico(String nombre, String ubicacion) {
@@ -54,7 +54,7 @@ public class Zoologico {
 	public int cantidadTotalAnimales() {
 		int total=0;
 		for(Zona i:zonas) {
-			total=+i.cantidadAnimales();
+			total=total+i.cantidadAnimales();
 		}
 		return total;
 	}
